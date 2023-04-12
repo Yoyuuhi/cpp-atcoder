@@ -12,32 +12,19 @@
 #define all(v) v.begin(), v.end()
 using namespace std;
 using namespace atcoder;
-template <typename T>
-bool chmax(T &a, const T &b) {
-    if (a < b) {
-        a = b;
-        return true;
-    }
-    return false;
-}
-template <typename T>
-bool chmin(T &a, const T &b) {
-    if (a > b) {
-        a = b;
-        return true;
-    }
-    return false;
-}
+using ll = long long;
+using Modint = atcoder::modint998244353;
+const int INF = numeric_limits<int>::max() / 2;
 
 int main() {
 #ifdef __LOCAL
-    freopen("input", "r", stdin);
+  freopen("input", "r", stdin);
 #endif
 
-    int a, b;
+  int a, b;
 
-    cin >> a;
-    cin >> b;
+  cin >> a;
+  cin >> b;
 
-    out(a + b)
+  out(a + b)
 }
