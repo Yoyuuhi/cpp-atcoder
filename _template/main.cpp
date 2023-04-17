@@ -13,7 +13,7 @@
 using namespace std;
 using namespace atcoder;
 using ll = long long;
-using Modint = atcoder::modint998244353;
+using mint = atcoder::modint998244353;
 const int INF = numeric_limits<int>::max() / 2;
 
 int main() {
