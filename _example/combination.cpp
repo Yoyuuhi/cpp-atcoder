@@ -1,3 +1,4 @@
+// https://algo-logic.info/combination/
 const int MOD = 1e9 + 7;
 vector<long long> fact, fact_inv, inv;
 /*  init_nCk :二項係数のための前処理
