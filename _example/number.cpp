@@ -52,3 +52,39 @@ long long gcd(long long a, long long b) {
     return gcd(b, a % b);
   }
 }
+
+// https://algo-logic.info/divisor/
+vector<long long> divisor(long long n) {
+  vector<long long> ret;
+  for (long long i = 1; i * i <= n; i++) {
+    if (n % i == 0) {
+      ret.push_back(i);
+      if (i * i != n) ret.push_back(n / i);
+    }
+  }
+  sort(ret.begin(), ret.end());
+  // 昇順に並べる
+  return ret;
+}
+
+// https://algo-logic.info/prime-fact/
+/*  prime_factor(n)
+    入力：整数 n
+    出力：nの素因数分解
+    計算量：O(√n)前後
+*/
+template <typename T>
+vector<pair<T, T>> prime_factor(T n) {
+  vector<pair<T, T>> ret;
+  for (T i = 2; i * i <= n; i++) {
+    if (n % i != 0) continue;
+    T tmp = 0;
+    while (n % i == 0) {
+      tmp++;
+      n /= i;
+    }
+    ret.push_back(make_pair(i, tmp));
+  }
+  if (n != 1) ret.push_back(make_pair(n, 1));
+  return ret;
+}
