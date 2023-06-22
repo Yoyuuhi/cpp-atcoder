@@ -8,5 +8,5 @@ if test "$mode" = "go" ; then
 fi
 
 if test "$mode" = "cpp"; then
-  g++ main.cpp; oj t 
+  g++ main.cpp; oj t -S
 fi
