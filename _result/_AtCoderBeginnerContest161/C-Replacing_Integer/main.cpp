@@ -21,10 +21,7 @@ int main() {
   freopen("input", "r", stdin);
 #endif
 
-  int a, b;
-
-  cin >> a;
-  cin >> b;
-
-  out(a + b)
+  ll n, k;
+  cin >> n >> k;
+  cout << min(n % k, -(n % k - k)) << endl;
 }
