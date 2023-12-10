@@ -43,9 +43,6 @@ int calc1(vector<int> R, vector<int> C) {
       }
       if (r == ii) {
         ans += ii - count;
-        // DBG(ii);
-        // DBG(count);
-        // DBG(ans);
         memR[ii] = true;
         break;
       }
@@ -67,9 +64,6 @@ int calc1(vector<int> R, vector<int> C) {
       }
     }
   }
-  // outs(R);
-  // outs(C);
-  // DBG(ans);
   return ans;
 }
 
